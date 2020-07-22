@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <style>
+
+      body {
+        margin: 0
+      }
+/*<!-- there are 1 small box type so . is ok but there are 2 bar types so # must be used -->*/
+    h1 {
+        font-family: sans-serif;
+      }
+
+      .bar {
+        background-color: #555555;
+        height: 130px;
+        margin-top: 10px;
+        width: 600px;
+      }
+
+      .box {
+        background-color: #cccccc;
+        display: inline-block;
+        height: 118px;
+        margin: 6px;
+        margin-right: 0;
+      }
+
+
+      #top .box {
+        width: 32%;
+      }
+
+
+      #middle .box {
+        width: 23.75%;
+        vertical-align: top;
+      }
+
+      #middle .box:nth-child(2n) {
+        height: 75px;
+      }
+
+      #middle .box:nth-child(2n+1) {
+        height: 100px;
+      }
+
+
+      #bottom .box {
+        width: 48.5%;
+      }
+
+      #bottom .box:nth-child(1) {
+        height: 35px;
+      }
+
+
+    </style>
+  </head>
+
+  <body>
+<!-- close the div around the squares that must be grouped with each other horizontally -->
+
+   <h1>AAAAAHHHHHH</h1>
+
+    <div class="bar" id="top">
+ 
+<!-- 3 top boxes overlaid on bar
+32% in top is 1/3 per so 3 boxes -->
+      <div class="box"></div><!-- 
+   --><div class="box"></div><!-- 
+   --><div class="box"></div>
+
+    </div>
+
+    <div class="bar" id="middle">
+
+<!-- 4 middle boxes overlaid on bar
+23.75 is roughly 1/4 so 4 boxes
+nth-child 2n is every other box (evens) is 75 px
+nth-child 2n+1 is odds are 100px
+vertical-alignment has boxes starting at top -->
+
+      <div class="box"></div><!-- 
+   --><div class="box"></div><!-- 
+   --><div class="box"></div><!-- 
+   --><div class="box"></div>
+
+    </div>
+
+    <div class="bar" id="bottom">
+
+<!-- 2 bottom boxes overlaid on bar -->
+
+      <div class="box"></div><!-- 
+   --><div class="box"></div>
+
+
+  </body>
+
+</html>
+
