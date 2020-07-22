@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <style>
+
+      body {
+        margin: 0
+      }
+    h1 {
+        font-family: sans-serif;
+      }
+/*padding can handle right,left, top and bottom margins in that order.*/
+      .bar {
+        background-color: #cccccc;
+        height: 200px;
+        width: 900px;
+        margin: 0 auto;
+        padding: 15px 10px;
+      }
+
+      .block-left,
+      .block-middle,
+      .block-right {
+        height: 180px;
+        width: 180px;
+        display: inline-block;
+        border: 10px double #555;
+      }
+/*repetition of block-middle will mean thios one supercedes earlier one
+border-radius at 50% converts to circle*/
+
+      .block-middle{
+        border-radius: 50%;
+        margin: 0 150px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+<!-- close the div around the squares that must be grouped with each other horizontally; commenting in original may somewhow be part of the solution -->
+
+    <div class="bar">
+
+
+      <div class="block-left"></div><!--
+   --><div class="block-middle"></div><!--
+   --><div class="block-right"></div>
+    </div>
+
+
+  </body>
+
+</html>
+
