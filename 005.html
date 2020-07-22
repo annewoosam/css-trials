@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <style>
+
+      body {
+        margin: 0
+      }
+/*<!-- there are 1 small box type so . is ok but there are 2 bar types so # must be used -->*/
+      .blackbox{
+        background-color: black;
+        height: 100px;
+        width: 100px;       
+        display: inline-block;
+        margin-left: 50px;
+        margin-top: 50px;
+      }
+      #red{
+        background-color: red;
+      }
+      #blue{
+        background-color: blue;
+      }
+      .bar {
+        height: 200px;
+        width: 350px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+<!-- close the div around the squares that must be aligned with each other horizontally -->
+
+    <div class="bar" id="red">
+  
+    <div class="blackbox"></div>
+    <div class="blackbox"></div>
+    </div>
+    <div class="bar" id="blue">
+    <div class="blackbox"></div>
+    <div class="blackbox"></div>
+    </div>
+  </body>
+
+</html>
+
